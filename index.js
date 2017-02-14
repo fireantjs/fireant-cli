@@ -1,6 +1,4 @@
-////var chalk = require('chalk');
 var chalk = require('chalk');
-//var yargs = require('yargs')
 var minimist = require('minimist');
 var Liftoff = require('liftoff');
 var timestamp = require('./lib/timestamp');
