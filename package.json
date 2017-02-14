@@ -1,0 +1,31 @@
+{
+  "name": "fireant-cli",
+  "version": "0.0.1",
+  "description": "Command Line Interface for Fireant",
+  "main": "index.js",
+  "scripts": {
+    "changelog": "github-changes -o fireantjs -r fireant-cli -b master -f ./CHANGELOG.md --order-semver --use-commit-body",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jari Lehtinen <jari@feature.fi>",
+  "license": "MIT",
+  "bin": {
+    "fire": "bin/fireant.js"
+  },
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "liftoff": "^2.3.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "github-changes": "^1.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fireantjs/fireant-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fireantjs/fireant-cli/issues"
+  },
+  "homepage": "https://github.com/fireantjs/fireant-cli#readme"
+}
