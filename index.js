@@ -1,7 +1,7 @@
 var chalk = require('chalk');
 var minimist = require('minimist');
 var Liftoff = require('liftoff');
-var timestamp = require('./lib/timestamp');
+var timestamp = require('fireant-timestamp');
 
 // Args
 var args = minimist(process.argv.slice(2), {
