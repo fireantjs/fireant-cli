@@ -15,7 +15,7 @@ var args = minimist(process.argv.slice(2), {
 });
 
 // Usage
-var usage = chalk.bold('Usage:') + ' fire ' + chalk.gray('[options]') + ' tasks';
+var usage = chalk.bold('Usage:') + ' fire ' + chalk.gray('[tasks]');
 
 // Create Liftoff instance
 var cli = new Liftoff({
@@ -25,7 +25,7 @@ var cli = new Liftoff({
     }
 });
 
-// Run method (options not yet fully supported)
+// Run method
 function run() {
     cli.launch({
         cwd: args.cwd,
@@ -72,7 +72,7 @@ function invoke(env) {
     }
 
     if (args._.length < 1) {
-        console.log(chalk.red(timestamp(), 'No tasks specified\n') + usage);
+        console.log(chalk.red(timestamp(), 'No tasks specified\n', usage));
         process.exit(1);
     }
 
