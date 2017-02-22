@@ -1,6 +1,6 @@
 {
   "name": "fireant-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Command Line Interface for Fireant",
   "main": "index.js",
   "scripts": {
